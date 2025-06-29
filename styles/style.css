@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 200;
+    color: var(--white);
+    background-color: var(--grey900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--grey800);
+    width: clamp(20rem, 50%, 23rem);
+    height: 36.5rem;
+    margin-block-start: 10rem;
+    border-radius: .7rem;
+}
+
+.content {
+    height: inherit;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-block-start: 2rem;
+}
+
+.profpic {
+    width: 5.3rem;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-block-end: -.8rem;
+}
+
+.profile p:nth-child(3) {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-block-start: 2rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey700);
+    width: 80%;
+    height: 2.7rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.social a:hover {
+    color: var(--grey900);
+    background-color: var(--green);
+}
+
+footer {
+    margin-block-start: 2rem;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social a {
+    transition: none;
+  }
+}
+
